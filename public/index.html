@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Corridor - Quoridor WebRTC</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    #board { width: 400px; height: 400px; margin: 20px auto; display: grid; grid-template: repeat(9, 1fr) / repeat(9, 1fr); gap: 2px; }
+    .cell { background: #eee; border: 1px solid #ccc; }
+    #status { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Corridor - Quoridor WebRTC</h1>
+  <input id="roomInput" placeholder="Enter room name" />
+  <button id="joinBtn">Join Room</button>
+
+  <div id="status">Not connected</div>
+  <div id="board"></div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
